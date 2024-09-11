@@ -1,0 +1,108 @@
+body {
+    background-color: firebrick;
+    color: white;
+}
+
+#calculator {
+    border: 3px solid #1f100f;
+    background-color: #422320;
+    height: 530px;
+    width: 400px;
+    padding: 8px;
+
+    /* Grid options */
+    display: grid;
+    column-gap: 1px;
+    row-gap: 5px;
+    grid-template-rows: 20% 80%;
+}
+
+#display {
+    width: 380px;
+    border: 1px solid #403c3c;
+    background-color: #1f100f;
+    font-family: 'Courier New', Courier, monospace;
+    
+    text-align: end;
+    vertical-align: bottom;
+    
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+#display-history {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: orange;
+    font-size: 1.2rem;
+}
+#display-input {
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* Controls */
+#btn-AC {grid-area: ac}
+#btn-division {grid-area: division}
+#btn-multiplication {grid-area: multiplication}
+#btn-7 {grid-area: seven}
+#btn-8 {grid-area: eight}
+#btn-9 {grid-area: nine}
+#btn-subtraction {grid-area: subtraction}
+#btn-4 {grid-area: four}
+#btn-5 {grid-area: five}
+#btn-6 {grid-area: six}
+#btn-addition {grid-area: addition}
+#btn-1 {grid-area: one}
+#btn-2 {grid-area: two}
+#btn-3 {grid-area: three}
+#btn-equal {grid-area: equal}
+#btn-0 {grid-area: zeroo}
+#btn-point {grid-area: point}
+
+#controls {
+    height: 407px;
+    /* Grid options */
+    display: grid;
+    grid-template-areas: 
+        'ac ac division multiplication'
+        'seven eight nine subtraction'
+        'four five six addition'
+        'one two three equal'
+        'zeroo zeroo point equal'
+    ;
+}
+
+button {
+    border: 1px solid black;
+    color: white;
+    font-size: 1.4em;
+}
+button:hover {
+    border: 1px solid gray;
+    color: black;
+}
+
+#btn-AC {
+    background-color: brown;
+}
+#btn-equal {
+    background-color: darkslateblue;
+}
+.btn-grey {
+    background-color: dimgray;
+}
+.btn-dark-grey {
+    background-color: #403c3c;
+}
+
+/* Author div */
+#author {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+}
